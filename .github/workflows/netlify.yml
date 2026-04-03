@@ -1,4 +1,4 @@
-name: Deploy to Netlify
+name: netlify
 
 on:
   push:
@@ -31,5 +31,5 @@ jobs:
           production-branch: main
           github-token: ${{ secrets.GITHUB_TOKEN }}
           deploy-message: "Deploy from GitHub Actions"
-          netlify-auth-token: ${{ secrets.CICD_PIPELINE}}
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
