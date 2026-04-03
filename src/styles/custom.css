@@ -1,0 +1,43 @@
+/* Additional custom styles */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 30px -12px rgba(124, 58, 237, 0.25);
+}
+
+.btn-violet {
+  background: #7C3AED;
+  border: none;
+  color: white;
+  transition: all 0.25s ease;
+}
+
+.btn-violet:hover {
+  background: #5B21B6;
+  transform: translateY(-3px);
+}
+
+.skill-card {
+  transition: all 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateX(5px);
+}
+
+.contact-input:focus {
+  border-color: #7C3AED;
+  box-shadow: 0 0 0 0.2rem rgba(124, 58, 237, 0.25);
+}
+
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+  .display-5 {
+    font-size: 1.75rem;
+  }
+}
