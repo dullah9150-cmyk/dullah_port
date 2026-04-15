@@ -5,7 +5,7 @@ const Navbar = () => {
   const [activeLink, setActiveLink] = useState('home')
   const [scrolled, setScrolled] = useState(false)
   
-  const navItems = ['home', 'about', 'skills','education', 'projects', 'contact']
+  const navItems = ['home', 'about', 'skills','Education', 'projects', 'contact']
   
   useEffect(() => {
     const handleScroll = () => {

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bright-kulfi-9e760c.netlify.app/

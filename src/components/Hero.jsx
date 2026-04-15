@@ -49,7 +49,7 @@ const Hero = () => {
               🚀 React & Node.js Developer
             </div>
             <h1 className="display-4 fw-bold mb-3" style={{ color: '#ffffff' }}>
-              Building <span style={{ color: '#FF6B00', textShadow: '0 0 20px rgba(255,107,0,0.5)' }}>scalable</span> web applications with modern tech
+              Building <span style={{ color: '#FF6B00', textShadow: '0 0 20px rgba(255,107,0,0.5)' }}>scalable</span> web applications with modern Tech
             </h1>
             <p className="lead mb-4" style={{ color: '#b0b0b0', fontSize: '1.2rem' }}>
               I'm Mohamed Abdullah— Full-Stack Developer specializing in React, Node.js, and building robust backend systems that power exceptional user experiences.
