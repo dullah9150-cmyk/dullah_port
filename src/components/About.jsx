@@ -67,7 +67,7 @@ const About = () => {
                   <h3 className="fw-semibold" style={{ color: '#ffffff' }}>I build <span style={{ color: '#FF6B00' }}>full-stack applications</span> that scale.</h3>
                   <p style={{ color: '#b0b0b0', lineHeight: '1.7' }}>With 4+ years of experience in full-stack development, I specialize in creating robust, scalable web applications using the MERN stack. I'm passionate about writing clean code, optimizing performance, and building seamless user experiences.</p>
                   <p style={{ color: '#b0b0b0' }} className="mb-0">
-                    <strong style={{ color: '#FF6B00' }}>🎯 Career goal:</strong> To architect and build high-impact applications that solve real-world problems while mentoring the next generation of developers.
+                    <strong style={{ color: '#FF6B00' }}>🎯 Career goal:</strong> To architect and build high-impact Applications that solve real-world problems while mentoring the next generation of developers.
                   </p>
                   <div className="mt-3">
                     <i className="bi bi-check-circle-fill me-2" style={{ color: '#FF6B00' }}></i> 10+ Completed Projects
