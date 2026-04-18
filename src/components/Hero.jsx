@@ -69,7 +69,7 @@ const Hero = () => {
                 <i className="bi bi-code-square me-2"></i>View Projects
               </button>
              <a 
-  href="/Abdullah.pdf" 
+  href="/dullah.pdf" 
   target="_blank" 
   rel="noopener noreferrer"
   className="btn px-4 py-2 rounded-pill fw-semibold"
