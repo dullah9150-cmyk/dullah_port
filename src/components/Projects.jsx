@@ -5,41 +5,59 @@ const Projects = () => {
   
   const projectsData = [
     { 
-      title: 'E-Commerce Platform', 
-      desc: 'Full-stack e-commerce solution with React, Node.js, MongoDB, and Stripe integration.', 
-      tech: 'React, Node.js, MongoDB, Stripe', 
+      title: 'Medical Care', 
+      desc: 'Full-stack Medical care solution with React, Node.js, MongoDB, and Stripe integration.', 
+      tech: 'React, Node.js, MongoDB, Express', 
       imgIcon: 'bi-cart4',
+      github: 'https://github.com/dullah9150-cmyk/Medicocare',
+      liveDemo: '#', // Add your live demo URL when available
       features: ['REST API', 'JWT Auth', 'Payment Gateway']
     },
     { 
-      title: 'Task Management App', 
-      desc: 'Real-time task management with drag-drop, user roles, and WebSocket notifications.', 
+      title: 'Chat App', 
+      desc: 'A chat app is a real-time messaging application that allows users to send and receive messages instantly. It can include features like one-to-one chat, group conversations, online status, notifications, media sharing, and secure authentication', 
       tech: 'React, Express, Socket.io, PostgreSQL', 
-      imgIcon: 'bi-check2-square',
-      features: ['Real-time Updates', 'Drag & Drop', 'Team Collaboration']
+      imgIcon: 'bi-chat-dots',
+      github: 'https://github.com/dullah9150-cmyk/Chatapp', // Update with your actual repo
+      liveDemo: '#',
+      features: ['Real-time Chat', 'Group Conversations', 'Media Sharing']
     },
     { 
-      title: 'Social Media Dashboard', 
-      desc: 'Analytics dashboard for social media metrics with data visualization and reports.', 
-      tech: 'Next.js, Node.js, Chart.js, Redis', 
-      imgIcon: 'bi-graph-up',
-      features: ['Data Visualization', 'Real-time Analytics', 'Export Reports']
+      title: 'Role Based Access Control', 
+      desc: 'Role based access control with user roles, and Employee roles.', 
+      tech: 'Next.js, Node.js, MongoDB, JWT', 
+      imgIcon: 'bi-shield-lock',
+      github: 'https://github.com/dullah9150-cmyk/Role_Based_Access_Control',
+      liveDemo: '#',
+      features: ['User Roles', 'Permissions', 'Access Management']
     },
     { 
-      title: 'REST API Gateway', 
+      title: 'Simple Data Connection', 
       desc: 'Scalable API gateway with rate limiting, caching, and microservices architecture.', 
-      tech: 'Node.js, Express, Redis, JWT', 
-      imgIcon: 'bi-hdd-stack',
-      features: ['Rate Limiting', 'Caching', 'Microservices']
+      tech: 'Node.js, Express, JWT', 
+      imgIcon: 'bi-database',
+      github: 'https://github.com/dullah9150-cmyk/Simple_Data_Connection',
+      liveDemo: '#',
+      features: ['API Gateway', 'Rate Limiting', 'Microservices']
     },
     { 
-      title: 'Portfolio CMS', 
-      desc: 'Headless CMS for developer portfolios with Markdown support and dynamic routing.', 
-      tech: 'React, Node.js, MongoDB, GraphQL', 
-      imgIcon: 'bi-file-earmark-code',
-      features: ['GraphQL API', 'Markdown Editor', 'Dynamic Routing']
+      title: 'Contact System', 
+      desc: 'Complete contact management system with CRUD operations and user authentication.', 
+      tech: ' Node.js, MongoDB, Express', 
+      imgIcon: 'bi-person-lines-fill',
+      github: 'https://github.com/dullah9150-cmyk/Contact-System',
+      liveDemo: '#',
+      features: ['CRUD Operations', 'User Auth', 'Contact Management']
     }
   ]
+
+  const openLink = (url) => {
+    if (url && url !== '#') {
+      window.open(url, '_blank', 'noopener,noreferrer')
+    } else {
+      alert('Live demo coming soon!')
+    }
+  }
 
   return (
     <section id="projects" className="py-5" style={{ background: '#0a0a0a' }}>
@@ -81,10 +99,16 @@ const Projects = () => {
                   <div><span className="badge me-1 px-3 py-2" style={{ background: '#2A1A0A', color: '#FF6B00' }}>{project.tech}</span></div>
                 </div>
                 <div className="card-footer bg-transparent border-0 pb-4 px-4 d-flex gap-2" style={{ borderTop: 'none' }}>
-                  <button className="btn btn-sm rounded-pill px-3" style={{ background: 'linear-gradient(135deg, #FF6B00, #FF8533)', color: '#000000', border: 'none', fontWeight: 'bold' }}>
-                    <i className="bi bi-github me-1"></i>Code
+                  <button 
+                    onClick={() => openLink(project.github)}
+                    className="btn btn-sm rounded-pill px-3" 
+                    style={{ background: 'linear-gradient(135deg, #FF6B00, #FF8533)', color: '#000000', border: 'none', fontWeight: 'bold' }}>
+                    <i className="bi bi-github me-1"></i>GitHub Repo
                   </button>
-                  <button className="btn btn-sm rounded-pill px-3" style={{ border: '2px solid #FF6B00', background: 'transparent', color: '#FF6B00', fontWeight: 'bold' }}>
+                  <button 
+                    onClick={() => openLink(project.liveDemo)}
+                    className="btn btn-sm rounded-pill px-3" 
+                    style={{ border: '2px solid #FF6B00', background: 'transparent', color: '#FF6B00', fontWeight: 'bold' }}>
                     <i className="bi bi-box-arrow-up-right me-1"></i>Live Demo
                   </button>
                 </div>
